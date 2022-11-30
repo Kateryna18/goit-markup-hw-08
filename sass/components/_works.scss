@@ -1,0 +1,32 @@
+.works {
+    @include section(0px, 94px);
+}
+
+.works-item {
+    display: flex;
+    gap: 30px;
+}
+
+.works-item__thumb {
+    position: relative;
+}
+
+.works-item__label {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+    background: rgba(47, 48, 58, 0.8);
+}

@@ -1,0 +1,14 @@
+.adress-list__item {
+    margin-bottom: 9px;
+}
+
+.adress-list__link {
+    color: var(--white-color);
+
+    transition: var(--color-transition);
+
+    &--contact {
+            color: rgba(255, 255, 255, 0.6);
+        }
+}
+
