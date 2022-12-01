@@ -1,18 +1,23 @@
 .modal {
-    display: flex;
-    justify-content: center;
+    
 
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
 
-    min-width: 528px;
-    min-height: 581px;
+    min-width: 450px;
+    min-height: 609px;
 
     background: #FFFFFF;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+
+    @media screen {
+        // display: flex;
+        // justify-content: center;
+        
+    }
 }
 
 .modal-button {
@@ -59,11 +64,17 @@
 
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: calc(30/20);
     text-align: center;
     letter-spacing: 0.03em;
 
     color: #212121;
+
+    @media screen and (min-width: 1200px) {
+        font-size: 20px;
+        line-height: calc(23/20);
+        
+    }
 }
 
 .modal-form-label {
@@ -131,7 +142,7 @@
     height: 120px;
 
 
-    padding: 8px;
+    padding: 12px 16px;
     font-family: inherit;
     font-size: inherit;
 
@@ -153,11 +164,17 @@
 
     &::placeholder {
         font-weight: 400;
-        font-size: 12px;
-        line-height: calc(14/12);
+        font-size: 14px;
+        line-height: calc(16/14);
         letter-spacing: 0.01em;
 
         color: rgba(117, 117, 117, 0.5);
+
+        @media screen and (min-width: 1200px) {
+            font-size: 12px;
+            line-height: calc(14/12);
+            
+        }
     }
 }
 
@@ -168,7 +185,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 7px;
+    gap: 8px;
 }
 
 .modal-form-label-checkbox {
@@ -198,11 +215,17 @@
 
 .modal-label-condition-text {
     font-weight: 400;
-    font-size: 14px;
-    line-height: calc(24/14);
+    font-size: 12px;
+    line-height: calc(14/12);
     letter-spacing: 0.03em;
 
     color: #757575;
+
+    @media screen and (min-width: 1200px) {
+            font-size: 14px;
+            line-height: calc(24/14);
+    
+        }
 }
 
 .label-condition-link {
@@ -211,15 +234,14 @@
 }
 
 .modal-form-button {
-    min-width: 200px;
     padding: 10px 52px;
+    margin-right: auto;
+    margin-left: auto;
 
-    display: inline-block;
+    display: block;
     font-weight: 700;
     font-size: 16px;
     line-height: calc(30/16);
-    align-items: center;
-    text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
 

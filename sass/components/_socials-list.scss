@@ -1,8 +1,12 @@
 .socials-list {
     display: flex;
-    margin-bottom: 30px;
+    padding-bottom: 24px;
     justify-content: center;
     gap: 10px;
+
+    @media screen and (min-width: 1200px) {
+        padding-bottom: 30px;
+    }
 }
 
 .socials-link {

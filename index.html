@@ -58,7 +58,7 @@
 
     <main>
       <!-- HERO -->
-      <!-- <section class="hero">
+      <section class="hero">
         <div class="container">
           <h1 class="hero-tittle">Ефективні рішення для вашого бізнесу</h1>
           <button type="button" class="button" data-modal-open>
@@ -119,7 +119,7 @@
             </form>
           </div>
         </div>
-      </section> -->
+      </section>
 
       <!-- FEATURES -->
       <section class="features">
@@ -181,14 +181,15 @@
       </section>
 
       <!-- WORKS -->
-      <!-- <section class="works">
+      <section class="works">
         <div class="container">
           <h2 class="section-title">Чим ми займаємося</h2>
           <ul class="works-item">
             <li>
               <div class="works-item__thumb">
                 <img
-                  src="./images/workprocess1.jpg"
+                srcset="./images/works/img1_l_@1x.jpg 1x, ./images/works/img1_l_@2x.jpg 2x"
+                  src="./images/works/img1_l_@1x.jpg"
                   alt="процес написання коду для сайту"
                   width="370"
                   height="294"
@@ -199,7 +200,8 @@
             <li>
               <div class="works-item__thumb">
                 <img
-                  src="./images/workprocess2.jpg"
+                  srcset="./images/works/img2_l_@1x.jpg 1x, ./images/works/img2_l_@2x.jpg 2x"
+                  src="./images/works/img2_l_@1x.jpg"
                   alt="робота з пк та телефоном"
                   height="294"
                 />
@@ -209,7 +211,8 @@
             <li>
               <div class="works-item__thumb">
                 <img
-                  src="./images/workprocess3.jpg"
+                  srcset="./images/works/img3_l_@1x.jpg 1x, ./images/works/img3_l_@2x.jpg 2x"
+                  src="./images/works/img3_l_@1x.jpg"
                   alt="процес створення дизайну"
                   width="370"
                   height="294"
@@ -219,18 +222,25 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- OUR TEAM -->
-      <!-- <section class="employees">
+      <section class="employees">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="team-list">
             <li class="team-list__card">
               <img
-                src="./images/ihordemianenko.jpg"
-                alt="Product Designer"
-                width="270"
+              srcset="
+              ./images/employees/img1_270.jpg 270w,
+              ./images/employees/img1_354.jpg 354w,
+              ./images/employees/img1_450.jpg 450w,
+              ./images/employees/img1_540.jpg 540w,
+              ./images/employees/img1_708.jpg 708w,
+              ./images/employees/img1_900.jpg 900w,"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./images/employees/img1_450.jpg"
+              alt="Product Designer"
               />
               <h3 class="team-list__card-title">Ігор Дем'яненко</h3>
               <p class="team-list__text">Product Designer</p>
@@ -271,9 +281,16 @@
             </li>
             <li class="team-list__card">
               <img
-                src="./images/olgarepina.jpg"
+                srcset="
+              ./images/employees/img2_270.jpg 270w,
+              ./images/employees/img2_354.jpg 354w,
+              ./images/employees/img2_450.jpg 450w,
+              ./images/employees/img2_540.jpg 540w,
+              ./images/employees/img2_708.jpg 708w,
+              ./images/employees/img2_900.jpg 900w,"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./images/employees/img2_450.jpg"
                 alt="Frontend Developer"
-                width="270"
               />
               <h3 class="team-list__card-title">Ольга Рєпіна</h3>
               <p class="team-list__text">Frontend Developer</p>
@@ -314,9 +331,16 @@
             </li>
             <li class="team-list__card">
               <img
-                src="./images/mykolatarasov.jpg"
+                srcset="
+              ./images/employees/img3_270.jpg 270w,
+              ./images/employees/img3_354.jpg 354w,
+              ./images/employees/img3_450.jpg 450w,
+              ./images/employees/img3_540.jpg 540w,
+              ./images/employees/img3_708.jpg 708w,
+              ./images/employees/img3_900.jpg 900w,"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./images/employees/img3_450.jpg"
                 alt="Marketing"
-                width="270"
               />
               <h3 class="team-list__card-title">Микола Тарасов</h3>
               <p class="team-list__text">Marketing</p>
@@ -357,9 +381,16 @@
             </li>
             <li class="team-list__card">
               <img
-                src="./images/myhailoermakov.jpg"
+                srcset="
+              ./images/employees/img4_270.jpg 270w,
+              ./images/employees/img4_354.jpg 354w,
+              ./images/employees/img4_450.jpg 450w,
+              ./images/employees/img4_540.jpg 540w,
+              ./images/employees/img4_708.jpg 708w,
+              ./images/employees/img4_900.jpg 900w,"
+              sizes="(min-width: 1200px) 270px, (min-width: 768px) 354px, (min-width: 480px) 450px, 100vw"
+              src="./images/employees/img4_450.jpg"
                 alt="UI Designer"
-                width="270"
               />
               <h3 class="team-list__card-title">Михайло Єрмаков</h3>
               <p class="team-list__text">UI Designer</p>
@@ -400,10 +431,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- OUR CLIENTS -->
-      <!-- <section class="clients">
+      <section class="clients">
         <div class="container">
           <h2 class="section-title">Постійні клієнти</h2>
           <ul class="clients-list">
@@ -487,11 +518,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- FOOTER -->
-    <!-- <footer class="footer">
+    <footer class="footer">
       <div class="container footer__footer-container">
         <div class="container-adress">
           <a href="./index.html" class="logo container-adress__logo">
@@ -601,7 +632,7 @@
           </label>
         </form>
       </div>
-    </footer> -->
+    </footer>
 
     <script src="./modal.js"></script>
   </body>

@@ -1,5 +1,10 @@
 .works {
     @include section(0px, 94px);
+
+    @media screen and (max-width: 1199px) {
+        display: none;
+        
+    }
 }
 
 .works-item {

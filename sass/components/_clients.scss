@@ -1,21 +1,20 @@
 .clients {
-    @include section;
+    @extend %section;
 }
 .clients-list {
     display: flex;
     justify-content: center;
     gap: 30px;
+    flex-wrap: wrap;
 }
 
 .clients-list__link {
     display: flex;
-    justify-content: center;
     align-items: center;
-    width: 170px;
     height: 92px;
     border: 1px solid #AFB1B8;
     border-radius: 4px;
-    padding: 16px 32px;
+    padding: 16px 51px;
 
     background-color: var(--white-color);
     color: #AFB1B8;
@@ -26,6 +25,14 @@
     &:focus {
             color: var(--accent-color);
             border: 1px solid var(--accent-color);
+        }
+
+        @media screen and (min-width: 768px) {
+            padding: 16px 59px;
+        }
+
+        @media screen and (min-width: 1200px) {
+            padding: 16px 31px;
         }
 }
 
