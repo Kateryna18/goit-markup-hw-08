@@ -1,5 +1,10 @@
-.adress-list__item {
-    margin-bottom: 9px;
+.adress-list {
+    text-align: center;
+}
+
+
+.adress-list__item:not(:last-child) {
+    margin-bottom: 12px;
 }
 
 .adress-list__link {

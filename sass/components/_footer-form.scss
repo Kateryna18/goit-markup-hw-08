@@ -8,15 +8,23 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
+
+    @media screen and (max-width: 1199px) {
+            text-align: center;
+        }
 }
 
 .footer-form-container {
-    display: flex;
+
+    @media screen and (min-width: 1200px) {
+        display: flex;
+    }
+    
 }
 
 .footer-form-label__input {
-    min-width: 358px;
-    margin-right: 12px;
+    min-width: 450px;
+    margin-bottom: 20px;
     padding-top: 15px;
     padding-bottom: 15px;
     padding-left: 16px;
@@ -28,6 +36,12 @@
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 4px;
     color: #FFFFFF;
+
+    @media screen and (min-width: 1200px) {
+            min-width: 358px;
+            margin-right: 12px;
+            margin-bottom: 0;
+        }
 }
 
 .footer-form__button {
