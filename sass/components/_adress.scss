@@ -1,5 +1,9 @@
 .adress-list {
     text-align: center;
+
+    @media screen and(min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 
